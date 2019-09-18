@@ -23,7 +23,7 @@ class Palindrome: XCTestCase {
       
         let clearTxt = txt.replacingOccurrences(of: " ", with: "")
         let txtLenght = clearTxt.count
-        for i in 0..<txtLenght{
+        for i in 0..<txtLenght/2 {
             if(Array(clearTxt)[i] != Array(clearTxt)[txtLenght-i-1]){
                 return false
             }
