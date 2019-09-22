@@ -12,7 +12,8 @@ class RotateArray: XCTestCase {
     
     func test(){
         
-        XCTAssertEqual(rotate(A: [2,5,7,1], numRotation: 10),[5,7,1,2])
+        XCTAssertEqual(rotate(A: [2,5,7,1], numRotation: 3),[5,7,1,2])
+        XCTAssertEqual(rotate(A: [2,5,7,1], numRotation: 1),[1,2,5,7])
     }
     
     func rotate(A:[Int],numRotation:Int)->[Int]{
