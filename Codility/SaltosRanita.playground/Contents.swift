@@ -11,7 +11,8 @@ class SaltosRanita:XCTestCase{
     }
     
     func test(){
-        print(jumpFrog(a: 10, b: 85, c: 30))
+        XCTAssertEqual(jumpFrog(a: 10, b: 85, c: 30), 3)
+        XCTAssertEqual(jumpFrog(a: 1, b: 10, c: 1),9)
     }
     
     func jumpFrog(a:Int,b:Int,c:Int)->Int{
